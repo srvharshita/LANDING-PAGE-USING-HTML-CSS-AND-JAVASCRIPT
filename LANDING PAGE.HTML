@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Brand Landing Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">SKIN CARE  </h1>
+            <ul class="nav-links">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="container">
+            <h2>Discover Natural Beauty</h2>
+            <p>Explore our range of skincare and beauty products crafted from natural ingredients.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </div>
+</header>
+
+<section id="products" class="products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-item">
+            <img src="https://www.southernliving.com/thmb/oHbXtfAoEQWkdChUg3k-wm1k0jE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-200493411-002-42af82ddf66049b9947cb857bfcf964f.jpg" alt="Product 1">
+            <h3>FACE WASH </h3>
+            <p>Our favorite face wash is the for The People Superfood Gentle Antioxidant Refillable Cleanser thanks to its satisfying gel-to-foam texture, sustainable packaging, and gentle but effective formula that works for all skin types.</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="product-item">
+            <img src="https://hhp-blog.s3.amazonaws.com/2019/07/sunscreen-1024x683.jpg" alt="Product 2">
+            <h3>SUNSCREEN </h3>
+            <p>Our sunscreen that protects against both UVA and UVB radiation. </p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="product-item">
+            <img src="http://beingafemale.com/wp-content/uploads/2018/04/face-cream.jpg" alt="Product 3">
+            <h3>FACE CREAM</h3>
+            <p>Our Face cream is used to supply your skin with a specific set of ingredients based on your skin’s needs. .</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We are committed to providing high-quality skin care products that enhance your natural beauty.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Beauty Brand. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body and header */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.products {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    margin-bottom: 40px;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1.1rem;
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 150px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .product-item h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
